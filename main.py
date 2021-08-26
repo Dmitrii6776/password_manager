@@ -82,28 +82,28 @@ canvas.grid(row=0, column=1)
 
 website_label = Label(text='Website:', font=("Courier", 10))
 website_label.grid(row=1, column=0)
-website_text = Entry(width=19)
+website_text = Entry(width=24)
 website_text.grid(row=1, column=1)
 
-search_button = Button(text='Search', font=("Courier", 8), command=search)
+search_button = Button(text='Search', font=("Courier", 9), command=search, width=14)
 search_button.grid(row=1, column=2)
 
 email_label = Label(text='Email/Username:', font=("Courier", 10))
 email_label.grid(column=0, row=2)
-email_text = Entry(width=35)
+email_text = Entry(width=40)
 website_text.focus()
 email_text.grid(row=2, column=1, columnspan=2)
 
 password_label = Label(text='Password:', font=("Courier", 10))
 password_label.grid(row=3, column=0)
-password_text = Entry(width=19)
+password_text = Entry(width=24)
 password_text.grid(row=3, column=1)
 
-generate_password_button = Button(text='Generate password', font=("Courier", 8), highlightthickness=0,
-                                  command=password_generator)
+generate_password_button = Button(text='Generate password', font=("Courier", 9), highlightthickness=0,
+                                  command=password_generator, width=14)
 generate_password_button.grid(row=3, column=2)
 
-add_button = Button(text='Add', font=("Courier", 10), width=32, command=add)
+add_button = Button(text='Add', font=("Courier", 10), width=37, command=add)
 add_button.grid(row=4, column=1, columnspan=2)
 
 window.mainloop()
